@@ -1,0 +1,12 @@
+.moulds-wrapper.row
+  - if @moulds.any?
+    .col-xs-12.col-sm-3
+    -@moulds.each do |mould|
+      .mould
+        .mould-head
+          =mould.name
+        .image.center-block
+          =link_to (image_tag mould.image.url(:medium), class: 'img-responsive'), mould_path(mould)
+  - else
+    %h2 No moulds yet!
+  =link_to 'Add a mould', new_mould_path

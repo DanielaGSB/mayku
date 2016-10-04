@@ -1,0 +1,7 @@
+.moulds-wrapper.row
+  .col-xs-12.col-sm-3
+    .mould
+      .mould-head
+        =@mould.name
+      .image.center-block
+        =image_tag(@mould.image.url(:medium), class: 'img-responsive')

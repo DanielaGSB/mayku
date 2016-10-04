@@ -1,0 +1,25 @@
+Mayku Tech Test
+
+Installation
+------------
+$ git clone git@github.com:DanielaGSB/mayku.git
+$ cd mayku
+$ bundle
+$ rake db:create
+$ rake db:migrate
+$ rails s
+Visit: http://localhost:3000 on your machine.
+
+Technologies
+-------------
+- Ruby on Rails
+- Postgres
+- Bootstrap SASS
+- Paperclip
+
+Tested with:
+- RSpec Rails
+- Capybara
+- Shoulda
+- Factory Girl
+- Faker
